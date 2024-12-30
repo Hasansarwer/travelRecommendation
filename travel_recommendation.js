@@ -22,12 +22,17 @@ function searchDestination(){
 
         destinations.forEach(destination => {
             console.log(destination);
+            if(key=='countries'){
+                destination = destination.cities[0];
+            }
             searchResults.innerHTML += `
             <div class="card">
                 <img src="${destination.image}" alt="Destination Image">
-                <h2>${destination.name}</h2>
-                <p>${destination.description}</p>
-                <button>visit</button>`
+                <div class="card-content">
+                    <h2>${destination.name}</h2>
+                    <p>${destination.description}</p>
+                    <button>visit</button>
+                    </div>`
         })
 
     })
