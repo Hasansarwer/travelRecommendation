@@ -6,7 +6,7 @@ function searchDestination(){
     const searchResults = document.getElementById('searchResults');
     searchResults.innerHTML ='';
 
-    fetch('/travel_recommendation.json')
+    fetch('/travel_recommendation_api.json')
     .then(response => response.json())
     .then(data => {
         const key = Object.keys(data).filter(item => item.includes(input));
