@@ -32,3 +32,10 @@ function searchDestination(){
 }
 
 searchBtn.addEventListener('click', searchDestination);
+
+function clearSearch(){
+    document.getElementById('searchInput').value = '';
+    document.getElementById('searchResults').innerHTML = '';
+}
+
+clearBtn.addEventListener('click', clearSearch);
