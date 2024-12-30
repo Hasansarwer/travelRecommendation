@@ -260,3 +260,8 @@ body, ul, li {
         font-size: 16px;
         width: fit-content;
     }
+
+    .card img{
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
