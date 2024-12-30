@@ -20,7 +20,7 @@ function searchDestination(){
             }
             searchResults.innerHTML += `
             <div class="card">
-                <img src="${destination.image}" alt="Destination Image">
+                <img src="${destination.imageUrl}" alt="Destination Image">
                 <div class="card-content">
                     <h2>${destination.name}</h2>
                     <p>${destination.description}</p>
